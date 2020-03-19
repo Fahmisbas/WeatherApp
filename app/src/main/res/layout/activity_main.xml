@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_custom" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="ENTER A CITY"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/edt_city"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btn_generateWeatherInfo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="WHAT'S THE WEATHER" />
+
+    <TextView
+        android:id="@+id/cloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_generateWeatherInfo"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Cloud : "
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/cloud"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Cloud..."
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_main"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Description"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/desc"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Description"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
